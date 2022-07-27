@@ -1,4 +1,3 @@
-
 class Monstro:
 
     def __init__(self, nome, forca, destreza, constituicao, inteligencia, sabedoria, carisma, deslocamento, armadura):
