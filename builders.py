@@ -11,6 +11,7 @@ class Monstro:
         self.deslocamento = deslocamento
         self.armadura = armadura
 
+
 class tamanhoMonstro:
 
     def __init__(self, nomeTamanho, vida):
