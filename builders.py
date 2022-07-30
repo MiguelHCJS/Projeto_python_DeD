@@ -11,6 +11,24 @@ class Monstro:
         self.deslocamento = deslocamento
         self.armadura = armadura
 
+    def atacar_fisico(self, ataque, elemento, forca):
+        self.ataque = ataque
+        self.elemento = elemento
+        self.carisma = forca
+        
+    def atacar_distancia(self, ataque, elemento, destreza):
+        self.ataque = ataque
+        self.elemento = elemento
+        self.carisma = destreza
+    
+    def atacar_magico(self, ataque, elemento, sabedoria):
+        self.ataque = ataque
+        self.elemento = elemento
+        self.carisma = sabedoria
+
+    def defender(self, destreza, armadura):
+        self.destreza = destreza
+        self.armadura = armadura
 
 class tamanhoMonstro:
 
