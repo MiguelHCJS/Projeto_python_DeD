@@ -1,6 +1,6 @@
 class Monstro:
 
-    def __init__(self, nome, forca, destreza, constituicao, inteligencia, sabedoria, carisma, deslocamento, armadura):
+    def __init__(self, nome, vida, forca, destreza, constituicao, inteligencia, sabedoria, carisma, deslocamento, armadura):
         self.__nome = nome
         self.__forca = forca
         self.__destreza = destreza
@@ -10,29 +10,26 @@ class Monstro:
         self.__carisma = carisma
         self.__deslocamento = deslocamento
         self.__armadura = armadura
-
-    def atacar_fisico(self, ataque, elemento, forca):
-        self.ataque = ataque
-        self.elemento = elemento
-        self.carisma = forca
-
-    def atacar_distancia(self, ataque, elemento, destreza):
-        self.ataque = ataque
-        self.elemento = elemento
-        self.carisma = destreza
-
-    def atacar_magico(self, ataque, elemento, sabedoria):
-        self.ataque = ataque
-        self.elemento = elemento
-        self.carisma = sabedoria
-
-    def defender(self, destreza, armadura):
-        self.destreza = destreza
-        self.armadura = armadura
-
-
-class tamanhoMonstro:
-
-    def __init__(self, nomeTamanho, vida):
-        self.__nomeTamanho = nomeTamanho
         self.__vida = vida
+
+    def status(self):
+        print(f'O monstro está com a vida em {self.__vida}')
+
+    def defenda(self, destreza, armadura):
+        self.__destreza = destreza
+        self.__armadura = armadura
+
+    def dano_fisico(self, alvo):
+        dano = self.__forca
+        alvo.recebe_dano(dano)
+
+    def dano_distancia(self, alvo):
+        dano = self.__destreza
+        alvo.recebe_dano(dano)
+
+    def dano_magico(self, alvo):
+        dano = self.__sabedoria
+        alvo.recebe_dano(dano)
+
+    def recebe_dano(self, dano):
+        self.__vida -= dano
