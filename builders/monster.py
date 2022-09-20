@@ -13,6 +13,9 @@ class Monstro:
         self.__vida = vida
         self.__tipo_monstro = tipo_monstro
 
+    def __str__(self):
+        pass
+
     @property  # Acesso direto com o "."
     def hp(self):
         print(f'O {self.__nome} está com a vida em {self.__vida}')
