@@ -1,3 +1,7 @@
 __pycache__
 magic.py
 player.py
+dados.py
+.mypy_cache
+.idea
+guia
