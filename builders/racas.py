@@ -13,6 +13,7 @@ class racas:
 class anao(racas):
 
     def __init__(self):
+        racas.__init__(self)
         self._up_con = 2
         self._visao_escuro = True
         self._resiliencia = 'veneno'
@@ -24,6 +25,7 @@ class anao(racas):
 class draconato(racas):
 
     def __init__(self):
+        racas.__init__(self)
         self._proficiencia = []
         self._up_for = 2
         self._up_car = 1
@@ -50,6 +52,7 @@ class draconato(racas):
 class elfo(racas):
     
     def __init__(self):
+        racas.__init__(self)
         self._proficiencia = ['percepcao']
         self._up_des = 2
         self.ancestral_feerico = ''''''
@@ -59,6 +62,7 @@ class elfo(racas):
 class gnomo(racas):
 
     def __init__(self):
+        racas.__init__(self)
         self._up_int = 2
         self._visao_escuro = True
         self.astucia_gnomo = ''''''
@@ -67,6 +71,7 @@ class gnomo(racas):
 class halfling(racas):
 
     def __init__(self):
+        racas.__init__(self)
         self._up_des = 2
         self.sortudo = ''''''
         self.corajoso = ''''''
@@ -76,6 +81,7 @@ class halfling(racas):
 class tielfling(racas):
 
     def __init__(self):
+        racas.__init__(self)
         self._up_int = 1
         self._up_car = 2
         self._visao_escuro = True
@@ -86,12 +92,14 @@ class tielfling(racas):
 class humano(racas):
 
     def __init__(self):
+        racas.__init__(self)
         self._up_all = 1
 
 
 class meio_elfo(racas):
 
     def __init__(self):
+        racas.__init__(self)
         self._up_car = 2
         self._up_any1 = 1
         self._up_any2 = 1
@@ -103,6 +111,7 @@ class meio_elfo(racas):
 class meio_orc(racas):
 
     def __init__(self):
+        racas.__init__(self)
         self._proficiencia = ['intimidação']
         self._up_for = 2
         self._up_con = 1
