@@ -16,4 +16,4 @@
 <br>
 
 Desenvolvendo uma aplicação usando como base um jogo de RPG, D&D.
-Com o objetivo de desenvolver meu conhecimento e experiencia em python.
+Com o objetivo de desenvolver meu conhecimento e a experiência com python.
